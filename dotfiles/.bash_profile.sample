@@ -1,0 +1,4 @@
+# Base configuration
+source ~/devconf/dotfiles/.bash_profile
+
+# Add custom, local configuration below (will not be committed)
