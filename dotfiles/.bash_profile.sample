@@ -2,6 +2,6 @@
 source ~/devconf/dotfiles/.bash_profile
 
 # Custom bash terminal
-export PS1='\e[0;37m\u\e[m: \W\e[0;37m$(__git_ps1 " (%s)")\e[m \$ '
+export PS1='\[\e[0;37m\]\u\[\e[m\]: \W\[\e[0;37m\]$(__git_ps1 " (%s)")\[\e[m\] \[\e[0;37m\]\$\[\e[m\] '
 
 # Add custom, local configuration below (will not be committed)
