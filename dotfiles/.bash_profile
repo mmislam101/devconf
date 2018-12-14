@@ -5,7 +5,7 @@ fi
 
 # Git autocompletion
 if [ -d /Library/Developer/CommandLineTools/usr/share/git-core/ ]; then
-    # User installed Git from 
+    # User installed Git from Xcode Command Line Tools
     source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
     source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
 elif [ -f /usr/local/etc/bash_completion ]; then
