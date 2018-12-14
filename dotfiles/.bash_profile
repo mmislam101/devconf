@@ -4,11 +4,16 @@ if [ -f ~/devconf/local/.bash_profile ]; then
 fi
 
 # Git autocompletion
-if [ -f /usr/local/etc/bash_completion ]; then
+if [ -d /Library/Developer/CommandLineTools/usr/share/git-core/ ]; then
+    # User installed Git from 
+    source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
+    source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+elif [ -f /usr/local/etc/bash_completion ]; then
     source /usr/local/etc/bash_completion
 else
-    echo "No Bash Completion. Please run brew install bash-completion"
+    echo "You either don't have Git installed, or you don't have brew bash-completion"
 fi
+
 
 # Terminal colors
 export CLICOLOR=1
