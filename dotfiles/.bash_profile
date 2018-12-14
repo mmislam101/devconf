@@ -4,7 +4,11 @@ if [ -f ~/devconf/local/.bash_profile ]; then
 fi
 
 # Git autocompletion
-source ~/devconf/dotfiles/.git-completion.sh
+if [ -f /usr/local/etc/bash_completion ]; then
+    source /usr/local/etc/bash_completion
+else
+    echo "No Bash Completion. Please run brew install bash-completion"
+fi
 
 # Terminal colors
 export CLICOLOR=1
